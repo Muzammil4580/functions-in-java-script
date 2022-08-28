@@ -50,3 +50,16 @@ tableof=12;
   console.log(alpha(5));
 
   // fat arrow function
+
+  const sum = () => {
+    let a=4;b=9;
+    sum=a*b;
+    return `the sum of two numbers is ${sum}`;
+    // we can write a+b in the template literel
+  }
+  const sum = () => {
+    let a=4;b=9;
+    // sum=a*b; no need to write this
+    return `the sum of two numbers is ${a+b}`;
+  }
+  
