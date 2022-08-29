@@ -110,7 +110,7 @@ tableof=12;
   // for each loop
 
   var myname =["muzammil","haroon","umer malik","zahid"]
-  myname.forEach(function(element, index, array)) {
+  myname.forEach(function(element, index, array) {
     console.log(element);
      // it will display the element of myname array
 
@@ -118,6 +118,18 @@ tableof=12;
       //haroon 
       //umer malik
       //zahid
-  }
+  });
+  // BY USING FOR EACH WE GET ELEMENT INDEX AND ARRAY AT THE SAME TIME
+  var myname =["muzammil","haroon","umer malik","zahid"]
+  myname.forEach(function(element, index, array) {
+    console.log(element+"index"+index+"array of that varible is"+array);
+
+    // IT WILL DISPLAY   
+     //muzammil index0 array of that function is muzammil,haroon,umer malik,zahid
+      //haroon index1 array of that function is muzammil,haroon,umer malik,zahid
+      //umer malik index2 array of that function is muzammil,haroon,umer malik,zahid
+      //zahid index3 array of that function is muzammil,haroon,umer malik,zahid
+  });
+
 
   
