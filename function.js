@@ -27,7 +27,7 @@ console.log(function22);
 
 // star anaonomus function 
 var akela=function(a,b){
-    return total a+b;
+    return total=a+b;
 }
 console.log(akela(7,9));
 
@@ -167,7 +167,57 @@ tableof=12;
   const myname =["muzammil","haroon","umer malik","zahid"];
   const newname= myname.splice(myname.lenght,0,"Irfan");
   console.log(myname);
+// if i put the newname in the console then it will return the [] in the out put
+
+  const myname =["muzammil","haroon","umer malik","zahid"];
+  const newname= myname.splice(myname.lenght,0,"Irfan");
+  console.log(newname);
+
+// if i have to replace SIR ATHAR KHARAL  in place of umer malik then
+
+  const myname =["muzammil","haroon","umer malik","zahid"];
+  const newname= myname.splice(3,3,"SIR ATHAR KHARAL");
+  console.log(myname);
+  // find index in the array 
+  const indexofstr = myname.indexOf('SIR ATHAR KHARAL');
+// IT WILL RETURN -1 if the search number or string not found in the array
+// soo we use if condition to do this
+if(indexof!=-1){
+  const newname= myname.splice(indexofstr,1,"SIR ATHAR KHARAL");
+  console.log(myname);
+}else{
+  console.log("the name you are searching no found in the array");
+}
+// If i have to detete the zahid from an araaay then i have to do this
+const myname =["muzammil","haroon","umer malik","zahid"];
+const indexofstr = myname.indexOf('zahid');
+if(indexof!=-1){
+  const newname= myname.splice(indexofstr,1);
+  console.log(myname);
+}else{
+  console.log("the name you are searching no found in the array");
+}
+// splite function varible return deleted value
+const myname =["muzammil","haroon","umer malik","zahid"];
+const indexofstr = myname.indexOf('zahid');
+if(indexof!=-1){
+  const newname= myname.splice(indexofstr,1);
+  console.log(newname);
+  // it will return ["zahid"]
+
+// if we delete the infinity data from the aray to the last
+const myname =["muzammil","haroon","umer malik","zahid"];
+const indexofstr = myname.indexOf('zahid');
+if(indexof!=-1){
+  const newname= myname.splice(indexofstr,Infinity);
+  console.log(myname);
+
   
+
+
+
+
+
 
 
 
