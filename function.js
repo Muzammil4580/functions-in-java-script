@@ -131,5 +131,51 @@ tableof=12;
       //zahid index3 array of that function is muzammil,haroon,umer malik,zahid
   });
 
+  // BY USING FAT ARROW FUNCTION
+  myname.forEach((element, index, array)) => {
+    console.log(element+"index"+index+"array of that varible is"+array);
+    
+  }
+  // update the array 
+  // push update at the end of the array
+  // unshift update at the start of the array
+
+
+  const myname =["muzammil","haroon","umer malik","zahid"];
+  myname.push("wahaj");
+  const count = myname.push("wahaj");
+  console.log(count);
+  console.log(myname)
+  // wahaj will be added at the end of the array 
+
+  
+  // REMOVE THE LAST ELEMENT OF THE ARRAY
+  consloe.log(pop(myname));
+  // It remove the last name of the arrray
+
+  // post remove the first element of the array 
+  // varible_name.shift();
+
+  // udate array by splice method
+
+  const myname =["muzammil","haroon","umer malik","zahid"];
+  const newname= myname.splice(5,0,"Irfan");
+  console.log(myname);
+
+  // if the lenght the array is soo big then we use the .lenghh to add at the end of the array
+
+  const myname =["muzammil","haroon","umer malik","zahid"];
+  const newname= myname.splice(myname.lenght,0,"Irfan");
+  console.log(myname);
+  
+
+
+
+  
+  
+
+
+
+
 
   
