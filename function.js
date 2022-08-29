@@ -62,4 +62,62 @@ tableof=12;
     // sum=a*b; no need to write this
     return `the sum of two numbers is ${a+b}`;
   }
+
+  // array in java script
+  var myname =["muzammil","haroon","umer malik","zahid"]
+  // acces the array 
+  console.log(myname[2]);
+  // chech the lenght ofa array
+  console.log(length.myname)
+  // lenght start from 1 and array index function start from 0
+  console.log(myname[myname.length-1]);
+  //it wil display the last element of the array
+
+
+  // loops in array 
+  for(i=0;i<myname.length;i++){
+    console.log(myname[i]);
+
+    // for in and for off loop included afoer AS6 
+
+
+    // in loop
+
+    for(let elements in myname){
+      console.log(elements);
+      //it willl display 
+      //0
+      //1
+      //2
+      //3
+      //4
+      // return the index number
+
+    }
+    // for off loop
+    for(let elements of myname){
+      console.log(elements);
+      // it will display the element of myname array
+
+      //muzammil
+      //haroon 
+      //umer malik
+      //zahid
+       
+    }
+  }
+
+  // for each loop
+
+  var myname =["muzammil","haroon","umer malik","zahid"]
+  myname.forEach(function(element, index, array)) {
+    console.log(element);
+     // it will display the element of myname array
+
+      //muzammil
+      //haroon 
+      //umer malik
+      //zahid
+  }
+
   
