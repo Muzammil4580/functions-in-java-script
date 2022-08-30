@@ -252,27 +252,33 @@ if(indexof!=-1){
 // IT RETURN
 //[2,3,4,5,6,7]
 
+// ARRAY TASK MULTIPLAY EACH ELEMENT BY 2 AND DISPLAY THOSE WHO ARE GREATER THAN 10
 
+let array22=[3,4,5,6,7]
+let nmwarr1=array22.map((element) => {
+  return element*2;
+}).filter((element) => {
+  return element>10;
+})
+console.log(nmwarr1);
+// OUTPUT
+//[12,14]
 
+// SHORT CUT METHOD TO WRITE THAT CODES
 
+let array2=[3,4,5,6,7]
+let nmwarr=array2.map((element) => element*2).filter((element) => element>10);
+console.log(nmwarr);
+// OUTPUT
+//[12,14]
 
+// reduce method convert 2d and 3d array to 1d array
+//i have to finf the sum of the above array
 
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
+let array21=[3,4,5,6,7]
+let nmwarr12=array21.map((element) => element*2).filter((element) => element>10).reduce((accumulator,element) =>{
+  return accumulator+=element;
+});
+console.log(nmwarr12);
+//26
+// if we put * after accumulator then it find the product of the statement
