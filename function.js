@@ -211,8 +211,55 @@ const indexofstr = myname.indexOf('zahid');
 if(indexof!=-1){
   const newname= myname.splice(indexofstr,Infinity);
   console.log(myname);
+}
 
+  // MAP FUNCTION 
   
+  const array11=[1,2,3,4,0,9,8,7,6,5]
+  let newarray=array11.map((currentelement,index,arr) => {
+  return `index no ${index} and the value is ${currentelement} belong to array ${arr}`
+   } )
+   console.log(newarray);
+   // it will return
+   //[
+  //' index no 0 and the value is 1 belong to array 1,2,3,4,0,9,8,7,6 ' ,
+  //                 similARLY
+  //
+  //]
+
+
+ // forEach() FUNCTION it will return the same value as the map function but it return undefined value
+  
+ const array1=[1,2,3,4,0,9,8,7,6,5]
+ let newarr=array1.forEach((currentelement,index,arr) => {
+ return `index no ${index} and the value is ${currentelement} belong to array ${arr}`
+  } )
+  console.log(newarr);
+  // it will return
+  //[
+ //' index no 0 and the value is 1 belong to array 1,2,3,4,0,9,8,7,6 ' ,
+ //                 similARLY
+ //
+ //]
+ // undefined
+
+ // SQUARE ROOT IN MATH BY JAVASCRIPT ARRAY METHOD
+ let arrar33=[4,9,16,25,36,49];
+ let sqroot=arrar33.map((element) => {
+  return Math.sqrt(element);
+ });
+ console.log(sqroot);
+// IT RETURN
+//[2,3,4,5,6,7]
+
+
+
+
+
+
+
+
+
 
 
 
